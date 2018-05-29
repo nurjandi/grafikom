@@ -22,7 +22,7 @@ void Tampilan (void)
 {	
 	glClear(GL_COLOR_BUFFER_BIT);
 	//gunung 1
-	glColor3f(0.137255, 0.556863, 0.137255);
+	glColor3f(0.133, 0.545, 0.133);
     glBegin(GL_POLYGON);
     glVertex2i(256, 600);
     glVertex2i(0, 300);
@@ -31,7 +31,7 @@ void Tampilan (void)
     glEnd();	
    	
    	//gunung 2
-   	glColor3f(0.137255, 0.556863, 0.137255);
+   	glColor3f(0.133, 0.545, 0.133);
     glBegin(GL_POLYGON);
     glVertex2i(768, 600);
     glVertex2i(512, 350);
@@ -41,7 +41,7 @@ void Tampilan (void)
    	
    	
 	//matahari
-    glColor3f(1.0, 1.0,0.0);
+    glColor3f(1.000, 0.843, 0.000);
 	glBegin(GL_POLYGON);
     for(int i=0;i<=360;i++){
     	float sudut = i+(PI/360);
@@ -163,6 +163,15 @@ void Tampilan (void)
     glVertex2i(536, 300);
     glVertex2i(560, 0);
     glVertex2i(462, 0);
+    glEnd();
+	
+	//sawah
+	glColor3f(0.678, 1.000, 0.184);
+    glBegin(GL_POLYGON);
+    glVertex2i(0, 300);
+    glVertex2i(488, 300);
+    glVertex2i(462, 0);
+    glVertex2i(0, 0);
     glEnd();
 	
     glFlush();
