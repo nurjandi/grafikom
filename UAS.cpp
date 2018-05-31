@@ -174,6 +174,109 @@ void Tampilan (void)
     glVertex2i(0, 0);
     glEnd();
 	
+	//garis sawah
+	
+	
+	//garis putus putus
+	glColor3f(248, 248, 255);
+    glBegin(GL_LINES);
+    for(int i=0; i<10; i++){
+    	glVertex2i(512, 300 - (i*30));
+    }
+	glEnd();
+	
+	//garis sawah
+	
+	
+	//tanah rumah
+	glColor3f(0.565, 0.933, 0.565);
+	glBegin(GL_POLYGON);
+	glVertex2i(536, 300);
+    glVertex2i(1024, 300);
+    glVertex2i(1024, 0);
+    glVertex2i(550, 0);
+    glEnd();
+    
+    //pohon
+    glColor3f(0.000, 0.392, 0.000);
+	glBegin(GL_TRIANGLES);
+	glVertex2i(600, 270);
+    glVertex2i(625, 200);
+    glVertex2i(575, 200);
+    glEnd();
+    
+    glColor3f(0.000, 0.502, 0.000);
+	glBegin(GL_TRIANGLES);
+    glVertex2i(600, 270);
+    glVertex2i(575, 200);
+    glVertex2i(600, 200);
+    glEnd();
+    
+    glColor3f(0.627, 0.322, 0.176);
+	glBegin(GL_POLYGON);
+    glVertex2i(595, 200);
+    glVertex2i(605, 200);
+    glVertex2i(605, 170);
+    glVertex2i(595, 170);
+    glEnd();
+    
+    //pohon 2
+    glColor3f(0.000, 0.392, 0.000);
+	glBegin(GL_TRIANGLES);
+	glVertex2i(650, 280);
+    glVertex2i(675, 210);
+    glVertex2i(625, 210);
+    glEnd();
+    
+    glColor3f(0.000, 0.502, 0.000);
+	glBegin(GL_TRIANGLES);
+    glVertex2i(650, 280);
+    glVertex2i(625, 210);
+    glVertex2i(650, 210);
+    glEnd();
+    
+    glColor3f(0.627, 0.322, 0.176);
+	glBegin(GL_POLYGON);
+    glVertex2i(645, 210);
+    glVertex2i(655, 210);
+    glVertex2i(655, 180);
+    glVertex2i(645, 180);
+    glEnd();
+    
+    //rumah balok
+    glColor3f(1.000, 0.871, 0.678);
+	glBegin(GL_POLYGON);
+    glVertex2i(700, 150);
+    glVertex2i(950, 150);
+    glVertex2i(950, 30);
+    glVertex2i(700, 30);
+    glEnd();
+    
+    glColor3f(0.871, 0.722, 0.529);
+	glBegin(GL_POLYGON);
+    glVertex2i(950, 150);
+    glVertex2i(990, 200);
+    glVertex2i(990, 80);
+    glVertex2i(950, 30);
+    glEnd();
+    
+    //atap
+    
+    glColor3f(0.804, 0.361, 0.361);
+	glBegin(GL_POLYGON);
+    glVertex2i(700, 150);
+    glVertex2i(730, 250);
+    glVertex2i(980, 250);
+    glVertex2i(950, 150);
+    glEnd();
+    
+    glColor3f(0.824, 0.706, 0.54);
+	glBegin(GL_TRIANGLES);
+    glVertex2i(950, 150);
+    glVertex2i(980, 250);
+    glVertex2i(990, 200);
+    
+    glEnd();
     glFlush();
 }
 int main(int argc, char ** argv)
